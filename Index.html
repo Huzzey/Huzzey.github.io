@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style/sylesheet.css">
+    <script src="script/javajs.js"> </script>
+    <link rel="shortcut icon" href="style/pictrue/favicon.ico">
+    <meta charset="UTF-8">
+    <title>DayzBaseBuildPlussCalculator</title>
+</head>
+
+<body onload="ClearAll()">
+
+
+    <div id="main">
+
+        <div class="type">
+            <div>
+                <div>Foundy (T1) <input onchange="Calc()" type="number" min="0" id="foundy(T1)" value="0"></div>
+                <div>Wall (T1) <input onchange="Calc()" type="number" min="0" id="wall(T1)" value="0"></div>
+                <div>Window (T1) <input onchange="Calc()" type="number" min="0" id="win(T1)" value="0"></div>
+                <div>Door (T1) <input onchange="Calc()" type="number" min="0" id="door(T1)" value="0"></div>
+                <div>Roof (T1) <input onchange="Calc()" type="number" min="0" id="roof(T1)" value="0"></div>
+                <div>Floor (T1) <input onchange="Calc()" type="number" min="0" id="floor(T1)" value="0"></div>
+                <div>Gate (T1) <input onchange="Calc()" type="number" min="0" id="gate(T1)" value="0"></div>
+            </div>
+            <div>
+                <div>Foundy (T2) <input onchange="Calc()" type="number" min="0" id="foundy(T2)" value="0"></div>
+                <div>Wall (T2) <input onchange="Calc()" type="number" min="0" id="wall(T2)" value="0"></div>
+                <div>Window (T2) <input onchange="Calc()" type="number" min="0" id="win(T2)" value="0"></div>
+                <div>Door (T2) <input onchange="Calc()" type="number" min="0" id="door(T2)" value="0"></div>
+                <div>Roof (T2) <input onchange="Calc()" type="number" min="0" id="roof(T2)" value="0"></div>
+                <div>Floor (T2) <input onchange="Calc()" type="number" min="0" id="floor(T2)" value="0"></div>
+                <div>Gate (T2) <input onchange="Calc()" type="number" min="0" id="gate(T2)" value="0"></div>
+            </div>
+            <div>
+                <div>Foundy (T3) <input onchange="Calc()" type="number" min="0" id="foundy(T3)" value="0"></div>
+                <div>Wall (T3) <input onchange="Calc()" type="number" min="0" id="wall(T3)" value="0"></div>
+                <div>Window (T3) <input onchange="Calc()" type="number" min="0" id="win(T3)" value="0"></div>
+                <div>Door (T3) <input onchange="Calc()" type="number" min="0" id="door(T3)" value="0"></div>
+                <div>Roof (T3) <input onchange="Calc()" type="number" min="0" id="roof(T3)" value="0"></div>
+                <div>Floor (T3) <input onchange="Calc()" type="number" min="0" id="floor(T3)" value="0"></div>
+                <div>Gate (T3) <input onchange="Calc()" type="number" min="0" id="gate(T3)" value="0"></div>
+            </div>
+
+        </div>
+
+        <p class="textp">To Calculate click butten below or press "enter"</p>
+
+        <div class="mid">
+            <div>
+                <div>
+                    <button id="mebutt" onclick="Calc()">Calculate</button>
+                </div>
+                <div>
+                    <button onclick="Clear()">Clear</button>
+                </div>
+                <div>
+                    <button onclick="ClearAll()">Clear All</button>
+                </div>
+            </div>
+            <div class="need">
+                <div>
+                    <pre>How many Packs of Nails you need:</pre>
+                    <pre>How many Logs just for The Planks:</pre>
+                    <pre>Coming sooooon sooooon :</pre>
+                </div>
+                <div>
+                    <pre id="PacksOnails"></pre>
+                    <pre id="Logs4Planks"></pre>
+                    <pre id="Mix2Concrete "></pre>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+
+            <div>
+                <div>
+                    <pre>Nails needed for T1:</pre>
+                    <pre>Planks needed for T1:</pre>
+                    <pre>Logs needed for T1:</pre>
+                </div>
+                <div>
+                    <pre id="NailsT1"></pre>
+                    <pre id="PlanksT1"></pre>
+                    <pre id="LogsT1"></pre>
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+                    <pre>Nails needed for T2:</pre>
+                    <pre>Planks needed for T2:</pre>
+                    <pre>Logs needed for T2:</pre>
+                    <pre>Metal needed for T2:</pre>
+                </div>
+                <div>
+                    <pre id="NailsT2"></pre>
+                    <pre id="PlanksT2"></pre>
+                    <pre id="LogsT2"></pre>
+                    <pre id="MetalT2"></pre>
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+                    <pre>Nails needed for T3:</pre>
+                    <pre>Planks needed for T3:</pre>
+                    <pre>Logs needed for T3:</pre>
+                    <pre>Metal needed for T3:</pre>
+                </div>
+                <div>
+                    <pre id="NailsT3"></pre>
+                    <pre id="PlanksT3"></pre>
+                    <pre id="LogsT3"></pre>
+                    <pre id="MetalT3"></pre>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <pre>Total Nails Needed:</pre>
+                    <pre>Total Planks needed:</pre>
+                    <pre>Total Logs needed:</pre>
+                    <pre>Total Metal needed:</pre>
+                </div>
+                <div>
+                    <pre id="NailsTot"></pre>
+                    <pre id="PlanksTot"></pre>
+                    <pre id="LogsTot"></pre>
+                    <pre id="MetalTot"></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
